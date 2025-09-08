@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SafraCred Correspondente Autorizado</title>
+    <title>Cifra Correspondente Autorizado</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
@@ -22,8 +22,8 @@
             theme: {
                 extend: {
                     colors: {
-                        safraCred: {
-                            primary: '#00003c',
+                        cifra: {
+                            orange: '#F26322',
                             white: '#FFFFFF',
                             black: '#000000',
                         }
@@ -40,9 +40,9 @@
         .select-selected.select-arrow-active:after { border-color: transparent transparent #6b7280 transparent; top: 12px; }
         .select-items { position: absolute; background-color: white; top: 100%; left: 0; right: 0; z-index: 99; border-radius: 8px; border: 1px solid #e5e7eb; margin-top: 4px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); }
         .select-items div { padding: 12px 16px; cursor: pointer; transition: all 0.2s; }
-        .select-items div:hover { background-color: rgba(0, 0, 60, 0.1); }
+        .select-items div:hover { background-color: rgba(242, 99, 34, 0.1); }
         .select-hide { display: none; }
-        .same-as-selected { background-color: rgba(0, 0, 60, 0.1); color: #00003c; }
+        .same-as-selected { background-color: rgba(242, 99, 34, 0.1); color: #F26322; }
         .border-error { border-color: #ef4444; }
     </style>
 </head>
@@ -50,10 +50,10 @@
     <header class="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
         <div class="container mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center">
-                <div class="w-12 h-12 bg-safraCred-primary rounded-full flex items-center justify-center text-white font-bold text-xl mr-3">S</div>
-                <h1 class="text-xl font-bold text-safraCred-black hidden sm:block">SafraCred Correspondente Autorizado</h1>
+                <div class="w-12 h-12 bg-cifra-orange rounded-full flex items-center justify-center text-white font-bold text-xl mr-3">C</div>
+                <h1 class="text-xl font-bold text-cifra-black hidden sm:block">Cifra Correspondente Autorizado</h1>
             </div>
-            <a href="#form-section" class="bg-safraCred-primary hover:bg-blue-900 text-white font-bold py-2 px-6 rounded-full transition duration-300">
+            <a href="#form-section" class="bg-cifra-orange hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-full transition duration-300">
                 Começar Agora
             </a>
         </div>
@@ -62,28 +62,28 @@
     <section class="pt-24 pb-16 px-4 bg-gradient-to-b from-white to-gray-100">
         <div class="container mx-auto max-w-4xl">
             <div class="text-center mb-12">
-                <h2 class="text-4xl md:text-5xl font-bold text-safraCred-black mb-4">Soluções Financeiras <span class="text-safraCred-primary">Personalizadas</span></h2>
+                <h2 class="text-4xl md:text-5xl font-bold text-cifra-black mb-4">Soluções Financeiras <span class="text-cifra-orange">Personalizadas</span></h2>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">
                     Conectamos você às melhores opções de crédito do mercado com transparência e agilidade.
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
-                    <div class="w-12 h-12 bg-safraCred-primary bg-opacity-10 rounded-full flex items-center justify-center text-safraCred-primary mb-4">
+                    <div class="w-12 h-12 bg-cifra-orange bg-opacity-10 rounded-full flex items-center justify-center text-cifra-orange mb-4">
                         <i class="fas fa-bolt text-xl"></i>
                     </div>
                     <h3 class="font-bold text-lg mb-2">Processo Rápido</h3>
                     <p class="text-gray-600">Resposta em até 24 horas úteis após análise completa.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
-                    <div class="w-12 h-12 bg-safraCred-primary bg-opacity-10 rounded-full flex items-center justify-center text-safraCred-primary mb-4">
+                    <div class="w-12 h-12 bg-cifra-orange bg-opacity-10 rounded-full flex items-center justify-center text-cifra-orange mb-4">
                         <i class="fas fa-percent text-xl"></i>
                     </div>
                     <h3 class="font-bold text-lg mb-2">Taxas Competitivas</h3>
                     <p class="text-gray-600">Negociamos as melhores condições para o seu perfil.</p>
                 </div>
                 <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition duration-300">
-                    <div class="w-12 h-12 bg-safraCred-primary bg-opacity-10 rounded-full flex items-center justify-center text-safraCred-primary mb-4">
+                    <div class="w-12 h-12 bg-cifra-orange bg-opacity-10 rounded-full flex items-center justify-center text-cifra-orange mb-4">
                         <i class="fas fa-shield-alt text-xl"></i>
                     </div>
                     <h3 class="font-bold text-lg mb-2">Segurança Garantida</h3>
@@ -96,7 +96,7 @@
     <section id="form-section" class="py-16 px-4 bg-white">
         <div class="container mx-auto max-w-md">
             <div class="bg-gray-50 p-8 rounded-xl shadow-lg">
-                <h2 class="text-2xl font-bold text-center text-safraCred-black mb-6">Solicite sua proposta</h2>
+                <h2 class="text-2xl font-bold text-center text-cifra-black mb-6">Solicite sua proposta</h2>
                 
                 <form id="contact-form" class="space-y-6">
                     <div style="position: absolute; left: -5000px;" aria-hidden="true">
@@ -107,21 +107,21 @@
                     <div>
                         <label for="full-name" class="block text-sm font-medium text-gray-700 mb-1">Nome Completo</label>
                         <input type="text" id="full-name" name="full-name" required 
-                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-safraCred-primary focus:border-safraCred-primary outline-none transition duration-300">
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-cifra-orange focus:border-cifra-orange outline-none transition duration-300">
                     </div>
                     
                     <div>
                         <label for="cpf" class="block text-sm font-medium text-gray-700 mb-1">CPF</label>
                         <input type="text" id="cpf" name="cpf" required 
-                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-safraCred-primary focus:border-safraCred-primary outline-none transition duration-300"
-                               maxlength="14">
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-cifra-orange focus:border-cifra-orange outline-none transition duration-300"
+                                maxlength="14">
                         <p id="cpf-error" class="text-red-500 text-xs mt-1 hidden">CPF inválido. Por favor, verifique.</p>
                     </div>
                     
                     <div>
                         <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Telefone</label>
                         <input type="text" id="phone" name="phone" required 
-                               class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-safraCred-primary focus:border-safraCred-primary outline-none transition duration-300">
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-cifra-orange focus:border-cifra-orange outline-none transition duration-300">
                         <p id="phone-error" class="text-red-500 text-xs mt-1 hidden">Telefone inválido. Verifique o DDD e o número.</p>
                     </div>
                     
@@ -147,13 +147,13 @@
                         </select>
                     </div>
                     
-                    <button type="submit" class="w-full bg-safraCred-primary hover:bg-blue-900 text-white font-bold py-3 px-4 rounded-lg transition duration-300 flex items-center justify-center">
+                    <button type="submit" class="w-full bg-cifra-orange hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-lg transition duration-300 flex items-center justify-center">
                         Enviar Solicitação
                         <i class="fas fa-paper-plane ml-2"></i>
                     </button>
                     
                     <p class="text-xs text-gray-500 text-center">
-                        Ao enviar, você concorda com nossos <a href="#" class="text-safraCred-primary hover:underline">Termos de Serviço</a> e <a href="#" class="text-safraCred-primary hover:underline">Política de Privacidade</a>.
+                        Ao enviar, você concorda com nossos <a href="#" class="text-cifra-orange hover:underline">Termos de Serviço</a> e <a href="#" class="text-cifra-orange hover:underline">Política de Privacidade</a>.
                     </p>
                 </form>
             </div>
@@ -162,12 +162,12 @@
 
     <section class="py-16 px-4 bg-gray-50">
         <div class="container mx-auto max-w-4xl">
-            <h2 class="text-3xl font-bold text-center text-safraCred-black mb-12">Perguntas Frequentes</h2>
+            <h2 class="text-3xl font-bold text-center text-cifra-black mb-12">Perguntas Frequentes</h2>
             <div class="space-y-4">
                 <div class="bg-white p-6 rounded-xl shadow-sm">
                     <button class="faq-toggle w-full flex justify-between items-center text-left">
                         <h3 class="font-bold text-lg">Qual é o prazo para análise do crédito?</h3>
-                        <i class="fas fa-chevron-down text-safraCred-primary transition-transform duration-300"></i>
+                        <i class="fas fa-chevron-down text-cifra-orange transition-transform duration-300"></i>
                     </button>
                     <p class="faq-content mt-3 text-gray-600 hidden">
                         O prazo médio para análise completa é de 1 a 3 dias úteis após o envio de toda a documentação necessária. Em alguns casos, podemos dar uma resposta preliminar em até 24 horas.
@@ -176,7 +176,7 @@
                 <div class="bg-white p-6 rounded-xl shadow-sm">
                     <button class="faq-toggle w-full flex justify-between items-center text-left">
                         <h3 class="font-bold text-lg">Quais documentos são necessários?</h3>
-                        <i class="fas fa-chevron-down text-safraCred-primary transition-transform duration-300"></i>
+                        <i class="fas fa-chevron-down text-cifra-orange transition-transform duration-300"></i>
                     </button>
                     <p class="faq-content mt-3 text-gray-600 hidden">
                         Os documentos básicos incluem RG, CPF, comprovante de residência e comprovante de renda. Dependendo do valor solicitado e do seu perfil, podem ser solicitados documentos adicionais.
@@ -185,7 +185,7 @@
                 <div class="bg-white p-6 rounded-xl shadow-sm">
                     <button class="faq-toggle w-full flex justify-between items-center text-left">
                         <h3 class="font-bold text-lg">Como funciona a liberação do crédito?</h3>
-                        <i class="fas fa-chevron-down text-safraCred-primary transition-transform duration-300"></i>
+                        <i class="fas fa-chevron-down text-cifra-orange transition-transform duration-300"></i>
                     </button>
                     <p class="faq-content mt-3 text-gray-600 hidden">
                         Após a aprovação, o contrato é enviado para assinatura digital. A liberação do valor ocorre em até 2 dias úteis após a assinatura do contrato, sendo creditado diretamente na conta bancária informada.
@@ -195,13 +195,13 @@
         </div>
     </section>
 
-    <footer class="bg-safraCred-black text-white py-12 px-4">
+    <footer class="bg-cifra-black text-white py-12 px-4">
         <div class="container mx-auto max-w-6xl">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
                     <div class="flex items-center mb-4">
-                        <div class="w-10 h-10 bg-safraCred-primary rounded-full flex items-center justify-center text-white font-bold text-lg mr-3">S</div>
-                        <h3 class="text-xl font-bold">SafraCred Correspondente Autorizado</h3>
+                        <div class="w-10 h-10 bg-cifra-orange rounded-full flex items-center justify-center text-white font-bold text-lg mr-3">C</div>
+                        <h3 class="text-xl font-bold">Cifra Correspondente Autorizado</h3>
                     </div>
                     <p class="text-gray-300 text-sm">
                         Soluções financeiras inteligentes para ajudar você a alcançar seus objetivos.
@@ -219,23 +219,23 @@
                 <div>
                     <h4 class="font-bold mb-4">Contato</h4>
                     <ul class="space-y-2 text-gray-300">
-                        <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-safraCred-primary"></i> (11) 1234-5678</li>
-                        <li class="flex items-center"><i class="fas fa-envelope mr-3 text-safraCred-primary"></i> contato@safracredcorrespondente.com.br</li>
-                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-3 text-safraCred-primary"></i> São Paulo - SP</li>
+                        <li class="flex items-center"><i class="fas fa-phone-alt mr-3 text-cifra-orange"></i> (11) 1234-5678</li>
+                        <li class="flex items-center"><i class="fas fa-envelope mr-3 text-cifra-orange"></i> contato@cifracorrespondente.com.br</li>
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt mr-3 text-cifra-orange"></i> São Paulo - SP</li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="font-bold mb-4">Redes Sociais</h4>
                     <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-safraCred-primary rounded-full flex items-center justify-center transition duration-300"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-safraCred-primary rounded-full flex items-center justify-center transition duration-300"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-safraCred-primary rounded-full flex items-center justify-center transition duration-300"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-safraCred-primary rounded-full flex items-center justify-center transition duration-300"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cifra-orange rounded-full flex items-center justify-center transition duration-300"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cifra-orange rounded-full flex items-center justify-center transition duration-300"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cifra-orange rounded-full flex items-center justify-center transition duration-300"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-cifra-orange rounded-full flex items-center justify-center transition duration-300"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
             </div>
             <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
-                <p>&copy; 2025 SafraCred Correspondente Autorizado. Todos os direitos reservados.</p>
+                <p>&copy; 2025 Cifra Correspondente Autorizado. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
@@ -334,7 +334,7 @@
     
             if (!isCpfValid || !isPhoneValid) {
                 setTimeout(() => {
-                    Swal.fire({ title: 'Dados Inválidos', text: 'Por favor, verifique os campos em vermelho.', icon: 'error', confirmButtonColor: '#00003c' });
+                    Swal.fire({ title: 'Dados Inválidos', text: 'Por favor, verifique os campos em vermelho.', icon: 'error', confirmButtonColor: '#F26322' });
                     if (!isCpfValid) { cpfError.classList.remove('hidden'); cpfInput.classList.add('border-error'); }
                     if (!isPhoneValid) { phoneError.classList.remove('hidden'); phoneInput.classList.add('border-error'); }
                     reenableForm();
@@ -366,18 +366,18 @@
                         window.location.href = 'obrigado.html';
                     });
                 } else if (data.status === 'duplicate') {
-                    Swal.fire({ title: 'Cadastro Existente', text: 'O CPF informado já foi cadastrado em nosso sistema.', icon: 'warning', confirmButtonColor: '#00003c' });
+                    Swal.fire({ title: 'Cadastro Existente', text: 'O CPF informado já foi cadastrado em nosso sistema.', icon: 'warning', confirmButtonColor: '#F26322' });
                     reenableForm();
                 } else if (data.status === 'bot_detected') {
                     console.log('Bot detectado. Motivo:', data.reason);
-                    Swal.fire({ title: 'Sucesso!', text: 'Sua solicitação foi enviada. Logo entraremos em contato.', icon: 'success', confirmButtonColor: '#00003c' });
+                    Swal.fire({ title: 'Sucesso!', text: 'Sua solicitação foi enviada. Logo entraremos em contato.', icon: 'success', confirmButtonColor: '#F26322' });
                 } else {
                     throw new Error(data.details || 'Resposta desconhecida do servidor.');
                 }
             })
             .catch(error => {
                 console.error('Ocorreu um erro no processo de envio:', error);
-                Swal.fire({ title: 'Erro de Comunicação', text: 'Não foi possível completar a solicitação. Por favor, tente novamente mais tarde.', icon: 'error', confirmButtonColor: '#00003c' });
+                Swal.fire({ title: 'Erro de Comunicação', text: 'Não foi possível completar a solicitação. Por favor, tente novamente mais tarde.', icon: 'error', confirmButtonColor: '#F26322' });
                 reenableForm();
             });
         });
